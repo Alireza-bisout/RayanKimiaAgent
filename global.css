@@ -1,0 +1,329 @@
+/* مدیا کوئری برای دسکتاپ */
+@media (min-width: 992px) {
+    .h-1 {
+        font-size: 3rem;
+    }
+
+    /* حدود 48px */
+    .h-2 {
+        font-size: 2.5rem;
+    }
+
+    /* حدود 40px */
+    .h-3 {
+        font-size: 2rem;
+    }
+
+    /* حدود 32px */
+    .h-4 {
+        font-size: 1.5rem;
+    }
+
+    /* حدود 24px */
+
+    .h-5 {
+        font-size: 1.25rem;
+    }
+
+    /* حدود 20px */
+
+    .body-text {
+        font-size: 1rem;
+
+    }
+
+    /* حدود 16px */
+    .body-small {
+        font-size: 0.875rem;
+
+    }
+
+    /* حدود 14px */
+}
+
+/* مدیا کوئری برای تبلت */
+@media (min-width: 768px) and (max-width: 991px) {
+    .h-1 {
+        font-size: 2.5rem;
+    }
+
+    /* حدود 40px */
+    .h-2 {
+        font-size: 2rem;
+    }
+
+    /* حدود 32px */
+    .h-3 {
+        font-size: 1.75rem;
+    }
+
+    /* حدود 28px */
+    .h-4 {
+        font-size: 1.5rem;
+    }
+
+    /* حدود 24px */
+
+    .h-5 {
+        font-size: 1.125rem;
+    }
+
+    /* حدود 18px */
+
+    .body-text {
+        font-size: 1rem;
+
+    }
+
+    /* حدود 16px */
+    .body-small {
+        font-size: 0.875rem;
+
+    }
+
+    /* حدود 14px */
+}
+
+/* مدیا کوئری برای موبایل */
+@media (max-width: 767px) {
+    .h-1 {
+        font-size: 2rem;
+    }
+
+    /* حدود 32px */
+    .h-2 {
+        font-size: 1.75rem;
+    }
+
+    /* حدود 28px */
+    .h-3 {
+        font-size: 1.5rem;
+    }
+
+    /* حدود 24px */
+    .h-4 {
+        font-size: 1.25rem;
+    }
+
+    /* حدود 20px */
+
+    .h-5 {
+        font-size: 1rem;
+    }
+
+    /* حدود 16px */
+
+    .body-text {
+        font-size: 0.875rem;
+
+    }
+
+    /* حدود 14px */
+    .body-small {
+        font-size: 0.75rem;
+
+    }
+
+    /* حدود 12px */
+}
+
+@font-face {
+    font-family: MEEM-Regular;
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/TTF/Meem-Regular.ttf');
+    src: url('./assets/fonts/WOFF/Meem-Regular.woff') format('woff'),
+        url('./assets/fonts/WOFF2/Meem-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MEEM-Bold;
+    font-style: normal;
+    font-weight: bold;
+    src: url('./assets/fonts/TTF/Meem-Bold.ttf');
+    src: url('./assets/fonts/WOFF/Meem-Bold.woff') format('woff'),
+        url('./assets/fonts/WOFF2/Meem-Bold.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MEEM-Thin;
+    font-style: normal;
+    font-weight: 100;
+    src: url('./assets/fonts/TTF/Meem-thin.ttf');
+    src: url('./assets/fonts/WOFF/Meem-thin.woff') format('woff'),
+        url('./assets/fonts/WOFF2/Meem-thin.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MEEM-Light;
+    font-style: normal;
+    font-weight: 300;
+    src: url('./assets/fonts/TTF/Meem-Light.ttf');
+    src: url('./assets/fonts/WOFF/Meem-Light.woff') format('woff'),
+        url('./assets/fonts/WOFF2/Meem-Light.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MEEM-Medium;
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/TTF/Meem-Medium.ttf');
+    src: url('./assets/fonts/WOFF/Meem-Medium.woff') format('woff'),
+        url('./assets/fonts/WOFF2/Meem-Medium.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MEEM-ExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    src: url('./assets/fonts/TTF/Meem-ExtraBold.ttf');
+    src: url('./assets/fonts/WOFF/Meem-ExtraBold.woff') format('woff'),
+        url('./assets/fonts/WOFF2/Meem-ExtraBold.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MEEM-Black;
+    font-style: normal;
+    font-weight: 850;
+    src: url('./assets/fonts/TTF/Meem-Black.ttf');
+    src: url('./assets/fonts/WOFF/Meem-Black.woff') format('woff'),
+        url('./assets/fonts/WOFF2/Meem-Black.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MEEM-Num-Regular;
+    font-style: normal;
+    src: url('./assets/fonts/FaNum/ttf/MeemFaNum-Regular.ttf');
+    src: url('./assets/fonts/FaNum/woff/MeemFaNum-Regular.woff') format('woff'),
+        url('./assets/fonts/FaNum/woff2/MeemFaNum-Regular.woff2') format('woff2');
+    font-display: normal;
+}
+
+@font-face {
+    font-family: MEEM-Num-Bold;
+    font-style: normal;
+    src: url('./assets/fonts/FaNum/ttf/MeemFaNum-Bold.ttf');
+    src: url('./assets/fonts/FaNum/woff/MeemFaNum-Bold.woff') format('woff'),
+        url('./assets/fonts/FaNum/woff2/MeemFaNum-Bold.woff2') format('woff2');
+    font-display: normal;
+}
+
+:root {
+    --font-normal: 'MEEM-Regular';
+    --font-bold: 'MEEM-Bold';
+    --font-100: 'MEEM-Thin';
+    --font-300: 'MEEM-Light';
+    --font-500: 'MEEM-Medium';
+    --font-800: 'MEEM-ExtraBold';
+    --font-850: 'MEEM-Black';
+    --font-num-regular: 'MEEM-Num-Regular';
+    --font-num-bold: 'MEEM-Num-Regular';
+    --primary-color: #57BAC0;
+    --info-color: #4d8fd5;
+    --green-color: #718B6E;
+    --red-color: #872D1E;
+    --transition: 200ms;
+}
+
+.font-bold {
+    font-family: var(--font-bold);
+}
+
+.font-num {
+    font-family: var(--font-num-regular);
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.green-color {
+    color: var(--green-color);
+}
+
+.red-color {
+    color: var(--red-color);
+}
+
+* {
+    font-family: var(--font-normal);
+}
+
+.box-content {
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-family: var(--font-normal);
+    overflow-x: auto;
+}
+
+.btn-kimia-primary {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-kimia-primary:hover {
+    opacity: 0.5;
+}
+
+.btn-kimia-secondary {
+    text-align: center;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 10px 15px;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-kimia-secondary:hover {
+    opacity: 0.5;
+}
+
+input {
+    border: 2px solid #E5E5E5;
+    padding: 8px 5px;
+    border-radius: 13px;
+    width: 100% !important;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+.table-container {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+table tr {
+    white-space: nowrap;
+}
+
+table thead tr {
+    background-color: #2faeb4;
+}
+
+table svg {
+    font-size: 25px !important;
+}
+
+.approved {
+    color: var(--green-color);
+}
+
+.reject {
+    color: var(--red-color);
+}

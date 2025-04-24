@@ -1,0 +1,177 @@
+@media screen and (max-width: 992px) {
+    .layout {
+        display: block !important;
+    }
+
+    #side-menu {
+        position: fixed !important;
+        right: -380px !important;
+        transition: 500ms;
+        z-index: 9999;
+    }
+
+    #panel {
+        padding-top: 60px;
+    }
+}
+
+body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+}
+
+#side-menu {
+    position: sticky;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    flex: 0 0 15%;
+    transition: 500ms;
+    background-color: #ffffff;
+    overflow-y: auto;
+    z-index: 99999999999;
+}
+
+.layout {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+#panel {
+    flex: 1;
+    transition: 500ms;
+}
+
+#side-menu ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#side-menu .logo {
+    width: 100%;
+    max-width: 200px;
+}
+
+#side-menu .close-logo {
+    max-width: 50px;
+    display: none;
+}
+
+
+#side-menu ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #909296;
+    transition: var(--transition);
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+#side-menu ul li .title-link {
+    margin-right: 10px;
+}
+
+#side-menu ul li .hover-active {
+    width: 2%;
+    border-radius: 10px 0 0 10px;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    transition: var(--transition);
+}
+
+#side-menu ul li.active .hover-active {
+    width: 2%;
+    height: 50%;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--primary-color);
+    position: absolute;
+    right: 0;
+}
+
+#side-menu ul li:hover {
+    color: var(--primary-color);
+}
+
+#side-menu ul li:hover .hover-active {
+    background-color: var(--primary-color);
+}
+
+#side-menu ul li div {
+    display: inline-block;
+    width: fit-content;
+}
+
+#side-menu ul li svg {
+    width: 24px;
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+#side-menu ul li.active svg,
+#side-menu ul li.active {
+    color: var(--primary-color);
+}
+
+#side-menu .btns svg {
+    width: 24px;
+    color: var(--primary-color);
+    font-size: 28px;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+/* closed style desktop */
+
+#side-menu.close-menu .close-logo {
+    width: 50px;
+    display: block;
+}
+
+#side-menu.close-menu .logo {
+    width: 50px;
+    display: none;
+}
+
+#side-menu.close-menu {
+    flex: 0 0 6% !important;
+}
+
+#side-menu.close-menu li .title-link {
+    display: none !important;
+}
+
+#side-menu.close-menu li {
+    display: block !important;
+    text-align: center;
+}
+
+#side-menu.close-menu .btns svg {
+    transform: rotate(-180deg);
+}
+
+/* closed style mobile */
+#side-menu.close-menu-mobile {
+    right: 0 !important;
+}
+
+.navbar {
+    transform: translateY(0);
+    /* موقعیت پیش‌فرض: نمایش */
+    transition: transform 0.3s ease-in-out;
+    /* ترنزیشن برای هر دو حالت */
+}
+
+.navbar-hide {
+    transform: translateY(-100%);
+    /* پنهان کردن */
+}

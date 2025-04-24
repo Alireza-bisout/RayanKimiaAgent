@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <div id="side-menu">
+            <div class>
+                <img src="../assets/images/logo.png" alt="logo" class="logo pe-5">
+                <div class="d-flex justify-content-center">
+                    <img src="../assets/images/closeLogo.png" alt="logo" class="close-logo">
+                </div>
+            </div>
+            <ul class="mt-4">
+                <li class="">
+                    <i class="fa-solid fa-house"></i>
+                    <div class=" title-link">صفحه اصلی</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <div class=" title-link">خرید جدید</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-shop"></i>
+                    <div class=" title-link">فهرست فروش</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-money-bills"></i>
+                    <div class="title-link">تراکنش های مای</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                    <div class="title-link">سرمایه گذاری</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <div class="title-link">پروفایل</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li class="active">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <div class="title-link">درخواست تسویه</div>
+                    <div class="hover-active"></div>
+                </li>
+                <!-- <hr class="mx-3">
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    <div class=" title-link">تنظیمات</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class=" title-link">پشتیبانی</div>
+                    <div class="hover-active"></div>
+                </li> -->
+            </ul>
+            <div onclick class="d-flex justify-content-end px-3 btns">
+                <i class="fa-solid fa-angles-right d-none d-lg-block" onclick="handelClickDesktop()"></i>
+                <i class="fa-solid fa-angles-right d-block d-lg-none" onclick="handelClickMobile()"></i>
+            </div>
+
+        </div>
+
+        <div id="panel" style="background-color: rgb(241, 241, 241);">
+            <nav class="navbar navbar-light bg-light px-3 d-flex d-lg-none nav-hide fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/images/logo.png" width="130" height="40" class="d-inline-block align-top" alt>
+                </a>
+
+                <button onclick="handelClickMobile()" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+
+            <div class="container">
+
+                <div class="box-content w-100 mt-5 py-4">
+
+                    <div class="d-flex align-items-center title-info">
+                        <span class="ps-3 pe-1">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </span>
+                        <h4 class="font-bold h-4 m-0 p-0">همکار ارجمند</h4>
+                    </div>
+
+                    <div class="px-5 mt-3">
+                        <p class="info">
+                            مانده بستانكار حساب جنابعالى بابت معاملات ثبت شده درسامانه، پس ازآخرين واريز نقدى تاكنون به
+                            شرح
+                            محاسبات زير <span>-١,٠٨۶,۵٥٨,٢٠٧٠٢</span> ريال است كه واريز نقدی آن به
+                            منزله مفاصا حساب فى مابين تامقطع كنونى وبه مأخذ محاسبات مذكور خواهد بود. ازاين روى چنانچه
+                            اختلاف
+                            حسابى مشاهده مى فرماييد. پيش ازانكه سفارش تسويه رابا
+                            كليك برروى دكمه تاييد محاسبات ارسال فرماييد، بدواً مراتب راطى تماس تلفنى باكارشناس واحد
+                            اطلاعات
+                            مالى
+                            شبكه فروش به شماره <span>ا٠٢١٩١٠٠٢٩۵</span> داخلی ٣ درمیان گذاردە
+                            وتنهاپس ازرفع مغايرت وعنداللزوم ويرايش حساب فى مابين، برروی دكمه تایید محاسبات كلیک
+                            فرمایید.عدم
+                            عنایت کافى همكاران دررعایت دستورالعمل فوق موجب می
+                            شودتا واريزى ها صرفاً جنبه على الحساب يافته وتسويه حساب فى مابين درمقاطع بعدى همواره مستلزم
+                            دوباره
+                            كارى وسردركمى طرفين درنتيجه ناترازى هاى حاصل ازتراكم
+                            مغايرت هاى انتقالى ازمقاطع قبلی باشد.
+                        </p>
+                    </div>
+
+                    <div class="d-flex justify-content-center justify-content-md-end px-5">
+                        <div class="btn-kimia-secondary d-inline">نمونه محاسبه پاداش همکاری</div>
+                    </div>
+
+                </div>
+
+                <div class="box-content w-100 mt-5 p-4">
+
+                    <div class="d-flex justify-content-between align-items-center row g-4">
+                        <div class="col-md-5 col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <div class="me-3 font-bold">مبلغ:</div>
+                                <div class="w-100"><input type="text"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 col-lg-3">
+                            <div class="btn-kimia-primary">تایید حساب و درخواست تسویه</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box-content w-100 mt-5 p-4">
+                    <h5 class="font-bold mb-3">جزییات آخرین وضعیت تسویه </h5>
+
+                    <div class="d-flex align-items-center title-info subtitle-info">
+                        <span class="pe-1">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </span>
+                        <h6 class="h-6 m-0 p-0">جزئیات درخواست تسویه از :  <span class="font-num">1403/12/18</span> تا
+                            - <span class="font-num">1403/12/20</span></h6>
+                    </div>
+
+                    <div class="d-flex align-items-center title-info subtitle-info mt-2">
+                        <span class="pe-1 green-color">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </span>
+                        <h6 class="h-6 m-0 p-0 green-color">فهرست پاداش همکاری:</span></h6>
+                    </div>
+
+                    <div class="row overflow-auto table-container rounded-2  scroll-table mt-3">
+                        <table class="table table-striped table-hover text-center table-bordered m-0">
+                            <thead class="sticky-top">
+                                <tr class="text-white">
+                                    <th>ردیف</th>
+                                    <th>تاریخ</th>
+                                    <th>پاداش همکاری دریافتی</th>
+                                    <th>پاداش همکاری پرداختی</th>
+                                    <th>ضریب</th>
+                                    <th> تراز اصلاح شده(تراز+پاداش همکاری روزهای قبل)</th>
+                                    <th> تراز</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">1403/12/19</td>
+                                    <td><bdi class="font-num">0</bdi></td>
+                                    <td><bdi class="font-num">-10,502,576</bdi> </td>
+                                    <td><bdi class="font-num">0.002876719714</bdi></td>
+                                    <td><bdi class="font-num">-3,650,885,997</bdi></td>
+                                    <td><bdi class="font-num">-3,650,885,997</bdi></td>
+                                </tr>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">1403/12/19</td>
+                                    <td><bdi class="font-num">0</bdi></td>
+                                    <td><bdi class="font-num">-10,502,576</bdi> </td>
+                                    <td><bdi class="font-num">0.002876719714</bdi></td>
+                                    <td><bdi class="font-num">-3,650,885,997</bdi></td>
+                                    <td><bdi class="font-num">-3,650,885,997</bdi></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="d-flex align-items-center title-info subtitle-info mt-5">
+                        <span class="pe-1 green-color">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </span>
+                        <h6 class="h-6 m-0 p-0 green-color">فهرست تراکنش های مالی حساب:</span></h6>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-lg-4">
+                            <div class="box-content mt-3 overflow-hidden p-3">
+                                <h5 class="h-5 font-bold">جمع واریز:</h5>
+                                <div class="font-num green-color h-4">0.0<span class="ms-2 h-5">ریال</span></div>
+                                <h5 class="h-5 font-bold mt-3">جمع واریز:</h5>
+                                <div class="font-num red-color h-4">500,000,000.0<span class="ms-2 h-5">ریال</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4">
+                            <div class="box-content mt-3 overflow-hidden p-3">
+                                <h5 class="h-5 font-bold">جمع واریز:</h5>
+                                <div class="font-num green-color h-4">0.0<span class="ms-2 h-5">ریال</span></div>
+                                <h5 class="h-5 font-bold mt-3">جمع واریز:</h5>
+                                <div class="font-num red-color h-4">0.0<span class="ms-2 h-5">ریال</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row overflow-auto table-container rounded-2  scroll-table mt-3">
+                        <table class="table table-striped table-hover text-center table-bordered m-0">
+                            <thead class="sticky-top">
+                                <tr class="text-white">
+                                    <th>ردیف</th>
+                                    <th>تاریخ</th>
+                                    <th>زمان</th>
+                                    <th>واریز</th>
+                                    <th>برداشت</th>
+                                    <th>یادداشت</th>
+                                    <th>تصویر</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">1403/12/19</td>
+                                    <td><bdi class="font-num">9:12</bdi></td>
+                                    <td><bdi class="font-num">500,000,000</bdi> </td>
+                                    <td><bdi class="font-num">0</bdi></td>
+                                    <td><bdi class="font-num"></bdi></td>
+                                    <td><bdi class="font-num"></bdi></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="d-flex align-items-center title-info subtitle-info mt-5">
+                        <span class="pe-1 green-color">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </span>
+                        <h6 class="h-6 m-0 p-0 green-color">فهرست تراکنش های کیپا:</span></h6>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-lg-4">
+                            <div class="box-content mt-3 overflow-hidden p-3">
+                                <h5 class="h-5 font-bold">جمع مبلغ تسویه کیپا:</h5>
+                                <div class="font-num green-color h-4">0.0<span class="ms-2 h-5">ریال</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row overflow-auto table-container rounded-2  scroll-table mt-3">
+                        <table class="table table-striped table-hover text-center table-bordered m-0">
+                            <thead class="sticky-top">
+                                <tr class="text-white">
+                                    <th>ردیف</th>
+                                    <th>تاریخ تراکنش</th>
+                                    <th>استان و شهر(پذیرنده)</th>
+                                    <th>کد ملی</th>
+                                    <th>مبلغ نقدی(ریال)</th>
+                                    <th>مبلغ تسویه(ریال)</th>
+                                    <th>مبلغ اعتباری(ریال)</th>
+                                    <th>ضریب</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-num"></td>
+                                    <td class="font-num"></td>
+                                    <td><bdi class="font-num"></bdi></td>
+                                    <td><bdi class="font-num"></bdi></td>
+                                    <td><bdi class="font-num"></bdi></td>
+                                    <td><bdi class="font-num"></bdi></td>
+                                    <td><bdi class="font-num"></bdi></td>
+                                    <td><bdi class="font-num"></bdi></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="d-flex align-items-center title-info subtitle-info mt-5">
+                        <span class="pe-1 green-color">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </span>
+                        <h6 class="h-6 m-0 p-0 green-color">فهرست فروش سیستم:</span></h6>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-lg-4">
+                            <div class="box-content mt-3 overflow-hidden p-3">
+                                <h5 class="h-5 font-bold">جمع مبلغ تسویه سیستم:</h5>
+                                <div class="font-num green-color h-4">326,187,500.0<span class="ms-2 h-5">ریال</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row overflow-auto table-container rounded-2  scroll-table mt-3">
+                        <table class="table table-striped table-hover text-center table-bordered m-0">
+                            <thead class="sticky-top">
+                                <tr class="text-white">
+                                    <th>ردیف</th>
+                                    <th>خریدار</th>
+                                    <th>نام کالا</th>
+                                    <th>شماره فاکتور</th>
+                                    <th>دسته بندی کالا</th>
+                                    <th>کد ملی</th>
+                                    <th>کد مستمری</th>
+                                    <th>تاریخ ثبت</th>
+                                    <th>مبلغ اعتباری</th>
+                                    <th>نوع تسویه </th>
+                                    <th>مبلغ تسویه</th>
+                                    <th>ضریب</th>
+                                    <th>کد تایید</th>
+                                    <th>وضعیت مدارک</th>
+                                    <th>وضعیت تایید </th>
+                                    <th>وضعیت لغو</th>
+                                    <th>تاریخ لغو</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">علیزاده - حسین</td>
+                                    <td><bdi class="font-num">mobile</bdi></td>
+                                    <td><bdi class="font-num">RKL-2926-12</bdi></td>
+                                    <td><bdi class="font-num d-flex align-items-center">تجهیزات الکترونیکی</bdi></td>
+                                    <td><bdi class="font-num">6369281323</bdi></td>
+                                    <td><bdi class="font-num">9004103070</bdi></td>
+                                    <td><bdi class="font-num">1403/12/14 - 20:34</bdi></td>
+                                    <td><bdi class="font-num">386,913,132</bdi></td>
+                                    <td><bdi class="font-num">تسویه آنی</bdi></td>
+                                    <td><bdi class="font-num">241,820,707.50</bdi></td>
+                                    <td><bdi class="font-num">1.60</bdi></td>
+                                    <td><bdi class="font-num">cu20822197691</bdi></td>
+                                    <td><bdi class="font-num">
+                                            <div class="btn-kimia-secondary">قرارداد</div>
+                                            <div class="btn-kimia-secondary my-2">رسید خرید</div>
+                                            <div class="btn-kimia-secondary">کارت ملی</div>
+                                        </bdi></td>
+                                    <td><bdi class="font-num primary-color"><i
+                                                class="fa-solid fa-circle-check"></i></bdi></td>
+                                    <td><bdi class="font-num"></bdi></td>
+                                    <td><bdi class="font-num"></bdi></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="box-content w-100 mt-5 p-4">
+                    <div class="d-flex align-items-center title-info subtitle-info">
+                        <span class="pe-1">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </span>
+                        <h6 class="h-6 m-0 p-0">فهرست درخواست های تسویه <span class="font-bold">مهدی رستگار (فروشگاه :
+                                موبایل صبا)</span></h6>
+                    </div>
+
+                    <div class="row overflow-auto table-container rounded-2 scroll-table mt-3">
+                        <table class="table table-striped table-hover text-center table-bordered m-0">
+                            <thead class="sticky-top">
+                                <tr class="text-white">
+                                    <th>ردیف</th>
+                                    <th>تاریخ</th>
+                                    <th>تراز</th>
+                                    <th>مبلغ درخواست</th>
+                                    <th>تایید مدیر</th>
+                                    <th>وضعیت</th>
+                                    <th>توضیحات</th>
+                                    <th>عملیات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><bdi class="font-num">11403/12/19</bdi></td>
+                                    <td><bdi class="font-num">3,737,177,125.2</bdi></td>
+                                    <td><bdi class="font-num d-flex justify-content-center align-items-center">
+                                            <span>241,820,707.50</span>
+                                            <span class="ms-2 approved d-flex">
+                                                <span><i class="fa-solid fa-caret-left"></i></span>
+                                                <span class="ms-1">بستانکار</span>
+                                            </span>
+                                        </bdi></td>
+                                    <td><bdi class="font-num">0</bdi></td>
+                                    <td><bdi class="font-num primary-color"><i class="fa-solid fa-circle-check"></i></bdi></td>
+                                    <td><bdi class="font-num">تایید شده</bdi></td>
+                                    <td><bdi class="font-num"></bdi></td>
+                                    <td><bdi class="font-num"> <div class="btn-kimia-secondary">قرارداد</div></bdi></td>
+
+                                </tr>
+                                <tr>
+                                    <td><bdi class="font-num">11403/12/19</bdi></td>
+                                    <td><bdi class="font-num">3,737,177,125.2</bdi></td>
+                                    <td><bdi class="font-num d-flex justify-content-center align-items-center">
+                                            <span>241,820,707.50</span>
+                                            <span class="ms-2 reject d-flex">
+                                                <span><i class="fa-solid fa-caret-left"></i></span>
+                                                <span class="ms-1">بدهکار</span>
+                                            </span>
+                                        </bdi></td>
+                                    <td><bdi class="font-num">0</bdi></td>
+                                    <td><bdi class="font-num primary-color"><i class="fa-solid fa-circle-check"></i></bdi></td>
+                                    <td><bdi class="font-num">تایید شده</bdi></td>
+                                    <td><bdi class="font-num"></bdi></td>
+                                    <td><bdi class="font-num"> <div class="btn-kimia-secondary">قرارداد</div></bdi></td>
+
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height: 1000px;"></div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        const handelClickDesktop = () => {
+            const sideMenu = document.getElementById('side-menu');
+            sideMenu.classList.toggle('close-menu');
+        }
+        const handelClickMobile = () => {
+            const sideMenu = document.getElementById('side-menu');
+            sideMenu.classList.toggle('close-menu-mobile');
+        }
+
+
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop) {
+                // Scroll Down
+                navbar.classList.add('navbar-hide');
+            } else {
+                // Scroll Up
+                navbar.classList.remove('navbar-hide');
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // جلوگیری از حرکت اسکرول منفی
+        });
+
+    </script>
+
+    <script src="../assets/fontawesome/all.min.js"></script>
+</body>
+
+</html>
