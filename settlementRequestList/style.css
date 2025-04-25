@@ -15,8 +15,6 @@
     font-size: 20px;
 }
 
-
-
 .approved svg {
     transform: rotate(90deg);
 }
@@ -25,3 +23,4 @@
 .reject svg {
     transform: rotate(-90deg);
 }
+

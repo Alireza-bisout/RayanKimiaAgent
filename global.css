@@ -224,7 +224,7 @@
     --font-800: 'MEEM-ExtraBold';
     --font-850: 'MEEM-Black';
     --font-num-regular: 'MEEM-Num-Regular';
-    --font-num-bold: 'MEEM-Num-Regular';
+    --font-num-bold: 'MEEM-Num-Bold';
     --primary-color: #57BAC0;
     --info-color: #4d8fd5;
     --green-color: #718B6E;
@@ -239,6 +239,9 @@
 .font-num {
     font-family: var(--font-num-regular);
 }
+.font-num-bold {
+    font-family: var(--font-num-bold);
+}
 
 .primary-color {
     color: var(--primary-color);
@@ -252,6 +255,10 @@
     color: var(--red-color);
 }
 
+.gray-color {
+    color: #909296
+}
+
 * {
     font-family: var(--font-normal);
 }
@@ -262,6 +269,7 @@
     border-radius: 20px;
     font-family: var(--font-normal);
     overflow-x: auto;
+    box-sizing: border-box;
 }
 
 .btn-kimia-primary {

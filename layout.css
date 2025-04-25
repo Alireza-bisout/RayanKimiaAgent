@@ -21,6 +21,7 @@ body {
     padding: 0;
     position: relative;
     display: flex;
+    background-color: #f5f7fb !important;
 }
 
 #side-menu {
@@ -46,6 +47,7 @@ body {
 #panel {
     flex: 1;
     transition: 500ms;
+    background-color: #f5f7fb;
 }
 
 #side-menu ul {

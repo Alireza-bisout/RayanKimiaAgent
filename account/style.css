@@ -1,0 +1,49 @@
+.info {
+    color: var(--info-color);
+    text-align: justify;
+}
+
+.title-info {
+    color: var(--info-color);
+}
+
+.title-info svg {
+    font-size: 30px;
+}
+
+.subtitle-info svg {
+    font-size: 20px;
+}
+
+.box-blue {
+    background-color: #ebf0f8;
+}
+
+.box-red {
+    background-color: #f1edf8;
+}
+
+
+.box-green {
+    background-color: #f1f7f6;
+}
+
+
+.percentage-box {
+    padding: 0px 10px;
+    border-radius: 8px;
+}
+
+.percentage-box.profit {
+    background-color: #dff4df;
+    color: #718b6e;
+}
+
+.percentage-box.loss {
+    background-color: #f4dfdf;
+    color: #8b6e6e;
+}
+
+.percentage-box.loss svg {
+    transform: rotate(180deg);
+}
