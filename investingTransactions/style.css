@@ -1,0 +1,88 @@
+.filter {
+    width: 100%;
+}
+
+.filter svg {
+    font-size: 22px;
+}
+
+.filter-item input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: var(--font-num-regular);
+}
+
+.menu li {
+    display: inline-block;
+    color: #909296;
+    margin-left: 20px;
+    font-family: var(--font-normal);
+    cursor: pointer;
+}
+
+.menu li.active {
+    color: #57BAC0;
+    border-bottom: 4px solid #57BAC0;
+}
+
+.checkboxs {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100% !important;
+}
+
+.mid {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.right-input {
+    border-radius: 0 5px 5px 0 !important;
+
+}
+
+.left-input {
+    border-radius: 5px 0 0 5px !important;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-secondary {
+    color: #DEB900;
+    border: 2px solid #DEB900;
+    background-color: transparent;
+}
+
+.btn-secondary:hover {
+    color: #deb90090;
+    border: 2px solid #DEB90090;
+}
+
+.btn-secondary:active {
+    color: #b19400;
+    border: 2px solid #b19400;
+}
+
+.info {
+    color: var(--info-color);
+    text-align: justify;
+}
+
+.title-info {
+    color: var(--info-color);
+}
+
+.title-info svg {
+    font-size: 30px;
+}
+
+.subtitle-info svg {
+    font-size: 20px;
+}

@@ -287,8 +287,8 @@
 
 .btn-kimia-primary {
     text-align: center;
-    background-color: var(--primary-color);
-    color: #ffffff;
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
@@ -301,8 +301,8 @@
 
 .btn-kimia-secondary {
     text-align: center;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    color: var(--primary-color) !important;
+    border: 2px solid var(--primary-color) !important;
     padding: 10px 15px;
     border-radius: 13px;
     cursor: pointer;
@@ -331,6 +331,11 @@ input:focus-visible {
 
 table tr {
     white-space: nowrap;
+}
+
+table td {
+    max-width: 150px;
+    overflow-x: auto;
 }
 
 table thead tr {

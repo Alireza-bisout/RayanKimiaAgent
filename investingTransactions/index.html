@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <div id="side-menu">
+            <div class>
+                <img src="../assets/images/logo.png" alt="logo" class="logo pe-5">
+                <div class="d-flex justify-content-center">
+                    <img src="../assets/images/closeLogo.png" alt="logo" class="close-logo">
+                </div>
+            </div>
+            <ul class="mt-4">
+                <li class="">
+                    <i class="fa-solid fa-house"></i>
+                    <div class=" title-link">صفحه اصلی</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <div class=" title-link">خرید جدید</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-shop"></i>
+                    <div class=" title-link">فهرست فروش</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-money-bills"></i>
+                    <div class="title-link">تراکنش های مالی</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                    <div class="title-link">سرمایه گذاری</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <div class="title-link">پروفایل</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li class="active">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <div class="title-link">درخواست تسویه</div>
+                    <div class="hover-active"></div>
+                </li>
+                <!-- <hr class="mx-3">
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    <div class=" title-link">تنظیمات</div>
+                    <div class="hover-active"></div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class=" title-link">پشتیبانی</div>
+                    <div class="hover-active"></div>
+                </li> -->
+            </ul>
+            <div onclick class="d-flex justify-content-end px-3 btns">
+                <i class="fa-solid fa-angles-right d-none d-lg-block" onclick="handelClickDesktop()"></i>
+                <i class="fa-solid fa-angles-right d-block d-lg-none" onclick="handelClickMobile()"></i>
+            </div>
+
+        </div>
+
+        <div id="panel">
+            <nav class="navbar navbar-light bg-light px-3 d-flex d-lg-none nav-hide fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/images/logo.png" width="130" height="40" class="d-inline-block align-top" alt>
+                </a>
+
+                <button onclick="handelClickMobile()" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+
+            <div class="container">
+
+
+                <div class="mt-5">
+                    <div class="filter box-content p-3 mb-5">
+                        <div>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <i class="fa-solid fa-filter"></i>
+                                </div>
+                                <div class="ms-2 h-4">فیلتر</div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div>
+                            <div class="row g-3">
+
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="filter-item">
+                                        <div class="body-text mb-1 font-bold">تاریخ</div>
+                                        <div class="d-flex">
+                                            <input type="text" class="right-input" placeholder="از" />
+                                            <input type="text" class="left-input" placeholder="تا" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row mt-5 g-3">
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="btn-kimia-primary w-100">اعمال فیلتر</div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="btn btn-secondary w-100">حذف فیلتر</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-content mt-4 p-4 mb-5">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="font-bold mb-3 h-5"></div>
+                        <div class="btn-kimia-secondary green-color">دریافت اکسل تراکنش های خارج از حساب</div>
+                    </div>
+
+                    <div class="row overflow-auto table-container rounded-2  scroll-table mt-3">
+                        <table class="table table-striped table-hover text-center table-bordered m-0">
+                            <thead class="sticky-top">
+                                <tr class="text-white">
+                                    <th>ردیف</th>
+                                    <th>نوع تراکنش</th>
+                                    <th>نوع سرمایه گذاری</th>
+                                    <th>واریز</th>
+                                    <th>برداشت</th>
+                                    <th>تاریخ</th>
+                                    <th>رسید</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">سرمایه گذاری</td>
+                                    <td class="font-num">پاداش همکاری دریافتی</td>
+                                    <td class="font-num">300,000,000</td>
+                                    <td class="font-num">0</td>
+                                    <td class="font-num">1403/12/16</td>
+                                    <td>
+                                        <div class="btn-kimia-secondary">تصویر</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">سرمایه گذاری</td>
+                                    <td class="font-num">پاداش همکاری دریافتی</td>
+                                    <td class="font-num">300,000,000</td>
+                                    <td class="font-num">0</td>
+                                    <td class="font-num">1403/12/16</td>
+                                    <td>
+                                        <div class="btn-kimia-secondary">تصویر</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">سرمایه گذاری</td>
+                                    <td class="font-num">پاداش همکاری دریافتی</td>
+                                    <td class="font-num">300,000,000</td>
+                                    <td class="font-num">0</td>
+                                    <td class="font-num">1403/12/16</td>
+                                    <td>
+                                        <div class="btn-kimia-secondary">تصویر</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">سرمایه گذاری</td>
+                                    <td class="font-num">پاداش همکاری دریافتی</td>
+                                    <td class="font-num">300,000,000</td>
+                                    <td class="font-num">0</td>
+                                    <td class="font-num">1403/12/16</td>
+                                    <td>
+                                        <div class="btn-kimia-secondary">تصویر</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">سرمایه گذاری</td>
+                                    <td class="font-num">پاداش همکاری دریافتی</td>
+                                    <td class="font-num">300,000,000</td>
+                                    <td class="font-num">0</td>
+                                    <td class="font-num">1403/12/16</td>
+                                    <td>
+                                        <div class="btn-kimia-secondary">تصویر</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">سرمایه گذاری</td>
+                                    <td class="font-num">پاداش همکاری دریافتی</td>
+                                    <td class="font-num">300,000,000</td>
+                                    <td class="font-num">0</td>
+                                    <td class="font-num">1403/12/16</td>
+                                    <td>
+                                        <div class="btn-kimia-secondary">تصویر</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">سرمایه گذاری</td>
+                                    <td class="font-num">پاداش همکاری دریافتی</td>
+                                    <td class="font-num">300,000,000</td>
+                                    <td class="font-num">0</td>
+                                    <td class="font-num">1403/12/16</td>
+                                    <td>
+                                        <div class="btn-kimia-secondary">تصویر</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">سرمایه گذاری</td>
+                                    <td class="font-num">پاداش همکاری دریافتی</td>
+                                    <td class="font-num">300,000,000</td>
+                                    <td class="font-num">0</td>
+                                    <td class="font-num">1403/12/16</td>
+                                    <td>
+                                        <div class="btn-kimia-secondary">تصویر</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">سرمایه گذاری</td>
+                                    <td class="font-num">پاداش همکاری دریافتی</td>
+                                    <td class="font-num">300,000,000</td>
+                                    <td class="font-num">0</td>
+                                    <td class="font-num">1403/12/16</td>
+                                    <td>
+                                        <div class="btn-kimia-secondary">تصویر</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">سرمایه گذاری</td>
+                                    <td class="font-num">پاداش همکاری دریافتی</td>
+                                    <td class="font-num">300,000,000</td>
+                                    <td class="font-num">0</td>
+                                    <td class="font-num">1403/12/16</td>
+                                    <td>
+                                        <div class="btn-kimia-secondary">تصویر</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-num">1</td>
+                                    <td class="font-num">سرمایه گذاری</td>
+                                    <td class="font-num">پاداش همکاری دریافتی</td>
+                                    <td class="font-num">300,000,000</td>
+                                    <td class="font-num">0</td>
+                                    <td class="font-num">1403/12/16</td>
+                                    <td>
+                                        <div class="btn-kimia-secondary">تصویر</div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        const handelClickDesktop = () => {
+            const sideMenu = document.getElementById('side-menu');
+            sideMenu.classList.toggle('close-menu');
+        }
+        const handelClickMobile = () => {
+            const sideMenu = document.getElementById('side-menu');
+            sideMenu.classList.toggle('close-menu-mobile');
+        }
+
+
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop) {
+                // Scroll Down
+                navbar.classList.add('navbar-hide');
+            } else {
+                // Scroll Up
+                navbar.classList.remove('navbar-hide');
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // جلوگیری از حرکت اسکرول منفی
+        });
+
+    </script>
+
+    <script src="../assets/fontawesome/all.min.js"></script>
+</body>
+
+</html>
