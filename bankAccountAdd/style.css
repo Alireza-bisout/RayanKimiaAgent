@@ -1,0 +1,46 @@
+.info {
+    color: var(--info-color);
+    text-align: justify;
+}
+
+.title-info {
+    color: var(--info-color);
+}
+
+.title-info svg {
+    font-size: 30px;
+}
+
+.filter-item input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: var(--font-num-regular);
+}
+
+.state {
+    border-radius: 8px 0 0 8px;
+    padding: 10px;
+    transition: var(--transition);
+    background-color: #F8F7FB;
+}
+
+.input-div input {
+    width: 100%;
+    border: 2px solid #E8E8E8;
+    padding: 10px;
+    border-radius: 0 8px 8px 0;
+}
+
+textarea{
+    width: 100%;
+    min-height: 50px;
+    max-height: 150px;
+    border: 2px solid #E8E8E8;
+    border-radius: 8px;
+}
+
+.title-check{
+    white-space: nowrap;
+}

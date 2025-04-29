@@ -24,7 +24,7 @@
                 </div>
             </div>
             <ul class="mt-4">
-                <li class="">
+                <li class="active">
                     <i class="fa-solid fa-house"></i>
                     <div class=" title-link">صفحه اصلی</div>
                     <div class="hover-active"></div>
@@ -54,7 +54,7 @@
                     <div class="title-link">پروفایل</div>
                     <div class="hover-active"></div>
                 </li>
-                <li class="active">
+                <li class="">
                     <i class="fa-solid fa-money-check-dollar"></i>
                     <div class="title-link">درخواست تسویه</div>
                     <div class="hover-active"></div>
@@ -92,76 +92,103 @@
             </nav>
 
             <div class="container">
-                <div class="title-section my-4 mx-md-5 d-flex align-items-center">
-                    <span class="m-0 me-2 h3"><i class="fa-regular fa-circle"></i></span>
-                    <h5 class="m-0 h-5 font-bold">ثبت خرید جدید</h5>
-                </div>
-                <div class="container-form d-flex justify-content-center align-items-center ">
-                    <div class=" ">
-                        <div class="container">
-                            <div class="mb-4">
-                                <div class="font-bold d-flex justify-content-end body-small">
-                                    <span class="gray-color">
-                                        مرحله <span class="ms-1 font-num-bold">1</span> <span class="mx-1 ">از</span>
-                                        <span class="font-num-bold">4</span>
-                                    </span>
-                                </div>
-                                <div class="kimia-progress-bar position-relative">
-                                    <!-- <div style="width: ***variable***"></div> -->
-                                    <div class="kimia-progress-bar-color position-absolute" style="width: 25%"></div>
-                                </div>
-                                <div>
-                                    <h5 class="h-5 font-bold mt-3">
-                                        مرحله 1 : اعتبار سنجی
-                                    </h5>
-                                </div>
-                            </div>
+
+                <div class="box-content w-100 mt-5 p-4">
+                    <div class="d-flex align-items-center title-info ">
+                        <div class="d-flex align-items-center title-info">
+                            <span class="pe-2 h-3">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </span>
+                            <h4 class="h-5 m-0 p-0">ثبت اطلاعات حساب بانکی فروشگاه : <span class="font-bold">موبایل
+                                    صبا</span></h4>
                         </div>
-                        <form class="p-2 mb-5">
-
-                            <div class="">
-                                <div>
-                                    <label class='font-bold body-text mb-1 mt-2'>کد ملی*</label>
-                                </div>
-                                <input type="password" placeholder='کد ملی خود را وارد کنید' />
-                            </div>
-                            <div class="mt-3">
-                                <div>
-                                    <label class='font-bold body-text mb-1 mt-2'>کد مستمری*</label>
-                                </div>
-                                <input type="password" placeholder='کد مستمری خود را وارد کنید' />
-                            </div>
-                            <div class="mt-3">
-                                <div>
-                                    <label class='font-bold body-text mb-1 mt-2'>شماره همراه*</label>
-                                </div>
-                                <input type="password" placeholder='شماره همراه خود را وارد کنید' />
-                            </div>
-                            <div class="mt-3">
-                                <div>
-                                    <label class='font-bold body-text mb-1 mt-2'>کد امنیتی*</label>
-                                </div>
-                                <input type="password" placeholder='کد امنیتی خود را وارد کنید' />
-                            </div>
-
-                            <div class='d-flex mt-5'>
-                                <div
-                                    class='d-flex justify-content-center align-items-center btn action-btn-primary btn-kimia-primary '>
-                                    ثبت و دریافت اطاعات
-                                </div>
-                                <div
-                                    class='d-flex justify-content-center align-items-center btn action-btn-secondary btn-kimia-secondary'>
-                                    پاک کردن/جدید
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
+
+                <div class="mt-4">
+                    <div class="box-content p-3 mb-5">
+                        <div class="row g-3">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="filter-item">
+                                    <div class="body-text mb-1 font-bold">نام بانک</div>
+                                    <input type="text" placeholder="نام بانک خود را وارد کنید" />
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4">
+                                <div class="filter-item">
+                                    <div class="body-text mb-1 font-bold">شماره کارت</div>
+                                    <input type="tel" class="text-start" placeholder="شماره کارت خود را وارد کنید" />
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4">
+                                <div class="filter-item">
+                                    <div class="body-text mb-1 font-bold">شماره حساب</div>
+                                    <input type="tel" class="text-start" placeholder="شماره حساب خود را وارد کنید" />
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 ">
+                                <div class="body-text mb-1 font-bold">شماره شبا</div>
+                                <div class="d-flex">
+                                    <div class='input-div w-75'>
+                                        <input type="text" placeholder="شماره شبا خود را وارد کنید" />
+                                    </div>
+                                    <div class='w-25'>
+                                        <div
+                                            class='state state-success d-flex align-items-center justify-content-center h-100'>
+                                            <div class="d-flex">
+                                                <div>IR</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="body-text mb-1 font-bold">توضیحات</div>
+                                <textarea name="" id=""></textarea>
+                            </div>
+
+                            <div class="col-12 mt-4">
+                                <div class='checkboxs d-flex justify-content-start'>
+                                    <div class='d-flex align-items-center'>
+                                        <div class=" ms-1 title-check me-1 font-bold h-6">حساب فعال</div>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class='d-flex align-items-center ms-5'>
+                                        <div class=" ms-1 title-check me-1 font-bold h-6">حساب اصلی</div>
+                                        <input type="checkbox" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row mt-5 g-3">
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="btn-kimia-primary w-100">ثبت حساب</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-content w-100 mb-5 p-4">
+                    <div class="d-flex align-items-center red-color subtitle-info">
+                        <span class="pe-2 h-3">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </span>
+                        <h4 class="h-5 m-0 p-0">لطفا به دقت اطلاعات را وارد کنید. در قبال اطلاعات اشتباه شرکت مسئولیتی
+                            ندارد.</h4>
+                    </div>
+                </div>
+
             </div>
-
-
-
         </div>
+    </div>
+
     </div>
 
 

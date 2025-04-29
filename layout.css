@@ -24,6 +24,12 @@ body {
     background-color: #f5f7fb !important;
 }
 
+.menu-box-shadow {
+    box-shadow: -150px 0 250px 52px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -150px 0 250px 52px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -150px 0 250px 52px rgba(0, 0, 0, 0.5);
+}
+
 #side-menu {
     position: sticky;
     right: 0;
