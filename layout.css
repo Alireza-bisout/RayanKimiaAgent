@@ -40,6 +40,14 @@ body {
     background-color: #ffffff;
     overflow-y: auto;
     z-index: 99999999999;
+    overflow: hidden;
+}
+
+.profile img {
+    aspect-ratio: 1/1;
+    width: 50px;
+    height: 50x;
+    border-radius: 8px;
 }
 
 .layout {
@@ -145,6 +153,17 @@ body {
     display: block;
 }
 
+#side-menu.close-menu .profile-hide {
+    opacity: 0;
+}
+.profile-hide:hover {
+ transition: var(--transition);
+}
+.profile-hide:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
 #side-menu.close-menu .logo {
     width: 50px;
     display: none;
@@ -166,6 +185,10 @@ body {
 #side-menu.close-menu .btns svg {
     transform: rotate(-180deg);
 }
+
+#side-menu.close-menu .btns {
+    justify-content: center !important;
+  }
 
 /* closed style mobile */
 #side-menu.close-menu-mobile {

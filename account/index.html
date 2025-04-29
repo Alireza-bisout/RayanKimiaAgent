@@ -16,50 +16,51 @@
 
     <div class="layout">
 
-        <div id="side-menu">
-            <div class>
-                <img src="../assets/images/logo.png" alt="logo" class="logo pe-5">
-                <div class="d-flex justify-content-center">
-                    <img src="../assets/images/closeLogo.png" alt="logo" class="close-logo">
+        <div id="side-menu" >
+            <div class="h-100 position-relative">
+                <div>
+                    <img src="../assets/images/logo.png" alt="logo" class="logo pe-5">
+                    <div class="d-flex justify-content-center">
+                        <img src="../assets/images/closeLogo.png" alt="logo" class="close-logo">
+                    </div>
                 </div>
-            </div>
-            <ul class="mt-4">
-                <li class="active">
-                    <i class="fa-solid fa-house"></i>
-                    <div class=" title-link">صفحه اصلی</div>
-                    <div class="hover-active"></div>
-                </li>
-                <li>
-                    <i class="fa-solid fa-cart-plus"></i>
-                    <div class=" title-link">خرید جدید</div>
-                    <div class="hover-active"></div>
-                </li>
-                <li>
-                    <i class="fa-solid fa-shop"></i>
-                    <div class=" title-link">فهرست فروش</div>
-                    <div class="hover-active"></div>
-                </li>
-                <li>
-                    <i class="fa-solid fa-money-bills"></i>
-                    <div class="title-link">تراکنش های مالی</div>
-                    <div class="hover-active"></div>
-                </li>
-                <li>
-                    <i class="fa-solid fa-money-bill-trend-up"></i>
-                    <div class="title-link">سرمایه گذاری</div>
-                    <div class="hover-active"></div>
-                </li>
-                <li>
-                    <i class="fa-solid fa-user"></i>
-                    <div class="title-link">پروفایل</div>
-                    <div class="hover-active"></div>
-                </li>
-                <li class="">
-                    <i class="fa-solid fa-money-check-dollar"></i>
-                    <div class="title-link">درخواست تسویه</div>
-                    <div class="hover-active"></div>
-                </li>
-                <!-- <hr class="mx-3">
+                <ul class="mt-4">
+                    <li class="active">
+                        <i class="fa-solid fa-house"></i>
+                        <div class=" title-link">صفحه اصلی</div>
+                        <div class="hover-active"></div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        <div class=" title-link">خرید جدید</div>
+                        <div class="hover-active"></div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-shop"></i>
+                        <div class=" title-link">فهرست فروش</div>
+                        <div class="hover-active"></div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-money-bills"></i>
+                        <div class="title-link">تراکنش های مالی</div>
+                        <div class="hover-active"></div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                        <div class="title-link">سرمایه گذاری</div>
+                        <div class="hover-active"></div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <div class="title-link">پروفایل</div>
+                        <div class="hover-active"></div>
+                    </li>
+                    <li class="">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <div class="title-link">درخواست تسویه</div>
+                        <div class="hover-active"></div>
+                    </li>
+                    <!-- <hr class="mx-3">
                 <li>
                     <i class="fa-solid fa-gear"></i>
                     <div class=" title-link">تنظیمات</div>
@@ -70,12 +71,35 @@
                     <div class=" title-link">پشتیبانی</div>
                     <div class="hover-active"></div>
                 </li> -->
-            </ul>
-            <div onclick class="d-flex justify-content-end px-3 btns">
-                <i class="fa-solid fa-angles-right d-none d-lg-block" onclick="handelClickDesktop()"></i>
-                <i class="fa-solid fa-angles-right d-block d-lg-none" onclick="handelClickMobile()"></i>
-            </div>
+                </ul>
+                <div class="d-flex justify-content-end px-3 btns">
+                    <i class="fa-solid fa-angles-right d-none d-lg-block" onclick="handelClickDesktop()"></i>
+                    <i class="fa-solid fa-angles-right d-block d-lg-none" onclick="handelClickMobile()"></i>
+                </div>
 
+                <div class="profile-box position-absolute bottom-0 right-0  w-100 px-3">
+                    <div class="profile-hide d-flex gray-color ">
+                        <div class="h-5"><i class="fa-solid fa-arrows-rotate"></i></div>
+                        <div class="ms-2">تازه سازی</div>
+                    </div>
+                    <div class="profile-hide d-flex gray-color mt-2 ">
+                        <div class="h-5"><i class="fa-solid fa-headset"></i></div>
+                        <div class="ms-2">پشتیبانی</div>
+                    </div>
+                    <div class="mx-2">
+                        <hr>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="profile">
+                            <img src="../assets/images/profile.png" alt="">
+                        </div>
+                        <div class="ms-2 profile-hide">
+                            <div class="body-small">مهدی رستگار(موبایل صبا)</div>
+                            <div class="font-num body-small gray-color">09121821007</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="panel">
