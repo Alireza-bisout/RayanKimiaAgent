@@ -146,7 +146,7 @@ body {
     cursor: pointer;
 }
 
-/* closed style desktop */
+
 
 #side-menu.close-menu .close-logo {
     width: 50px;
@@ -190,19 +190,19 @@ body {
     justify-content: center !important;
   }
 
-/* closed style mobile */
+
 #side-menu.close-menu-mobile {
     right: 0 !important;
 }
 
 .navbar {
     transform: translateY(0);
-    /* موقعیت پیش‌فرض: نمایش */
+  
     transition: transform 0.3s ease-in-out;
-    /* ترنزیشن برای هر دو حالت */
+  
 }
 
 .navbar-hide {
     transform: translateY(-100%);
-    /* پنهان کردن */
+
 }

@@ -287,8 +287,6 @@
 
 .btn-kimia-primary {
     text-align: center;
-    background-color: var(--primary-color) !important;
-    color: #ffffff !important;
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
