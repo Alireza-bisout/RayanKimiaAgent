@@ -313,7 +313,7 @@
 }
 
 .btn-kimia-secondary {
-    border: 2px solid ;
+    border: 2px solid;
     background-color: transparent;
     text-align: center;
     padding: 10px 15px;
@@ -458,7 +458,6 @@ body {
     transition: var(--transition);
     cursor: pointer;
     padding: 10px;
-
 }
 
 #side-menu ul li .title-link {
@@ -501,6 +500,88 @@ body {
     margin-right: 10px;
     font-size: 28px;
 }
+
+
+/*  */
+.accordion-style svg {
+    width: 24px;
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.accordion-style {
+    padding: 10px !important;
+    color: #909296;
+}
+
+.accordion-style:hover {
+    color: var(--primary-color);
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-style:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: #f5f7fb !important;
+}
+
+.accordion-style:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-style:not(.collapsed) .hover-active {
+    background-color: var(--primary-color);
+
+}
+
+.accordion-style:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-style:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-style:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: none !important;
+}
+
+.accordion-style .title-link {
+    margin-right: 10px;
+}
+
+.accordion-style li {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.accordion-style .hover-active {
+    width: 2%;
+    border-radius: 10px 0 0 10px;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    transition: var(--transition);
+}
+
+.accordion-style:hover .hover-active {
+    background-color: var(--primary-color);
+}
+
+.accordion.active .hover-active {
+    background-color: var(--primary-color);
+}
+
+.accordion li:not(:last-child) {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+/*  */
 
 #side-menu ul li.active svg,
 #side-menu ul li.active {

@@ -15,7 +15,7 @@
 
     <div class="layout">
 
-        <div id="side-menu" >
+        <div id="side-menu">
             <div class="h-100 position-relative">
                 <div>
                     <img src="../assets/images/logo.png" alt="logo" class="logo pe-5">
@@ -29,16 +29,30 @@
                         <div class=" title-link">صفحه اصلی</div>
                         <div class="hover-active"></div>
                     </li>
-                    <li class="dropdown">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <div class="title-link  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">خرید جدید</div>
-                        <div class="hover-active"></div>
 
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">خرید 1</a></li>
-                            <li><a class="dropdown-item" href="#">خرید 2</a></li>
-                        </ul>
-                    </li>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button accordion-style position-relative" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <div class="title-link">خرید جدید</div>
+                                    <div class="hover-active"></div>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li class="active">خرید1</li>
+                                        <li>خرید2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <li>
                         <i class="fa-solid fa-shop"></i>
                         <div class=" title-link">فهرست فروش</div>
