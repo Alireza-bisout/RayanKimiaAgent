@@ -578,7 +578,7 @@ body {
 }
 
 .accordion li:not(:last-child) {
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid #0000001c;
 }
 
 /*  */
